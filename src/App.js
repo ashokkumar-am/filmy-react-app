@@ -2,6 +2,7 @@ import './App.css';
 // import Login from './components/Login';
 import Register from './components/Signup'
 // import Create from './components/Create'
+import Movie from './components/Movie';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Register />
       {/* <Login /> */}
       {/* <Create /> */}
+      <Movie />
     </div>
   );
 }

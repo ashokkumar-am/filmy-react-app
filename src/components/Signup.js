@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import { Formik, Form, useField } from 'formik';
 import * as Yup from 'yup';
 
@@ -69,9 +69,9 @@ const Signup = () => {
                     />
 
 
-                    
 
-                        <button type="submit" className="btnstyle">Submit</button>
+
+                    <button type="submit" className="btnstyle">Submit</button>
                 </Form>
             </Formik>
         </>
