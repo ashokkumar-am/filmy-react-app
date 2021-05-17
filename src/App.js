@@ -1,7 +1,7 @@
 import './App.css';
 // import Login from './components/Login';
-// import Register from './components/Signup'
-import Create from './components/Create'
+import Register from './components/Signup'
+// import Create from './components/Create'
 
 function App() {
   return (
@@ -9,9 +9,9 @@ function App() {
       <header>
         <h1>Register Page</h1>
       </header>
-      {/* <Register /> */}
+      <Register />
       {/* <Login /> */}
-      <Create />
+      {/* <Create /> */}
     </div>
   );
 }

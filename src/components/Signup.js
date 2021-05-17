@@ -21,7 +21,7 @@ const MyTextInput = ({ label, ...props }) => {
 const Signup = () => {
     return (
         <>
-            <h1>Rgister Form!</h1>
+            <h1>Register Form!</h1>
             <Formik
                 initialValues={{
                     username: '',
@@ -55,7 +55,12 @@ const Signup = () => {
                         type="text"
                         placeholder="Rajesh"
                     />
-
+                    <MyTextInput
+                        label="Email Address"
+                        name="email"
+                        type="email"
+                        placeholder="rajes@gemini.com"
+                    />
                     <MyTextInput
                         label="password"
                         name="password"
@@ -63,15 +68,10 @@ const Signup = () => {
                         placeholder="****"
                     />
 
-                    <MyTextInput
-                        label="Email Address"
-                        name="email"
-                        type="email"
-                        placeholder="rajes@gemini.com"
-                    />
 
+                    
 
-                    <button type="submit">Submit</button>
+                        <button type="submit" className="btnstyle">Submit</button>
                 </Form>
             </Formik>
         </>
