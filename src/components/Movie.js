@@ -6,10 +6,10 @@ class Movie extends React.Component {
         const apiUrl = 'http://3.108.14.110/api/v1/movie/list';
         fetch(apiUrl)
             .then((response) => response.json())
-            .then((data) => console.log('This is your data', data));
+            .then((p) => console.log('This is your data', p));
     }
     render() {
-        return <h1>my Component has Mounted, Check the browser 'console' </h1>;
+        return <h1>my Component has Mounted, Check the browser 'console' {this.data}</h1>;
     }
 }
 export default Movie;

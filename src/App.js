@@ -1,8 +1,9 @@
 import './App.css';
 // import Login from './components/Login';
-import Register from './components/Signup'
+// import Register from './components/Signup'
 // import Create from './components/Create'
-import Movie from './components/Movie';
+// import Movie from './components/Movie';
+import FetchDataTesting from './components/testingtest'
 
 function App() {
   return (
@@ -11,10 +12,11 @@ function App() {
         <h1>Register Page</h1>
         <h2>learn react</h2>
       </header>
-      <Register />
+      {/* <Register /> */}
       {/* <Login /> */}
       {/* <Create /> */}
-      <Movie />
+      {/* <Movie /> */}
+      <FetchDataTesting />
     </div>
   );
 }
