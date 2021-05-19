@@ -9,6 +9,7 @@ function App() {
     <div className='App'>
       <header>
         <h1>Register Page</h1>
+        <h2>learn react</h2>
       </header>
       <Register />
       {/* <Login /> */}
