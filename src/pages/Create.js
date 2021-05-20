@@ -1,36 +1,11 @@
-import React, { Component } from "react";
+import React  from "react";
 
-export default class Create extends Component {
+class Create extends React.Component({
     render() {
         return (
-            <form>
-                <h3>create</h3>
-
-                <div className="form-group">
-                    <label>First name</label>
-                    <input type="text" className="form-control" placeholder="First name" />
-                </div>
-
-                <div className="form-group">
-                    <label>Last name</label>
-                    <input type="text" className="form-control" placeholder="Last name" />
-                </div>
-
-                <div className="form-group">
-                    <label>Email</label>
-                    <input type="email" className="form-control" placeholder="Enter email" />
-                </div>
-
-                <div className="form-group">
-                    <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
-                </div>
-
-                <button type="submit" className="btn btn-dark btn-lg btn-block">Register</button>
-                <p className="forgot-password text-right">
-                    <button> SUBMIT</button>
-                </p>
-            </form>
-        );
+            <div><h1>Create Page</h1></div>
+        )
     }
-}
+});
+
+export default Create;
