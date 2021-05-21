@@ -3,7 +3,8 @@ import React from 'react';
 import { Formik, Form, useField } from 'formik';
 import * as Yup from 'yup';
 import MyTextInput from '../components/MyTextInput'
-
+import MyTextArea from '../components/MyTextArea';
+import MySelect from '../components/MySelectLabel';
 
 
 // And now we can use these
@@ -26,24 +27,23 @@ const Create = () => {
                 validationSchema={Yup.object({
                     movieName: Yup.string()
                         .max(40, 'Must be 15 characters or less')
-                        .required('Required'),
+                        .required('Required a Movie Name'),
                     movieDescription: Yup.string()
                         .max(200, 'Must be 200 characters or less')
-                        .required('Required'),
+                        .required('Please provide the Description of the movie'),
                     movieRelesaeDate: Yup.date()
                         .required('Please Select the Date!'),
                     movieRating: Yup.string()
                         .max(5, 'Must be 15 characters or less')
-                        .required('Required'),
+                        .required('Please select the rating'),
                     ticketPrice: Yup.string()
                         .max(10, 'Must be 15 characters or less')
-                        .required('Required'),
+                        .required('Required a Ticket Price'),
                     country: Yup.string()
-                        .max(15, 'Must be 15 characters or less')
                         .required('Required'),
                     genre: Yup.string()
-                        .max(20, 'Must be 15 characters or less')
-                        .required('Required'),
+                        .required('Required')
+                        .oneOf(["Comedy", "Drama", "Romance", "Thriller", "Melo Drama", "Classic", "Horror", "Action", "Science Fiction", "Documentry", "Fiction", "Kids"]),
                     moviepicture: Yup.mixed()
                         .required('Required a Movie Picture!')
                         .test(
@@ -67,24 +67,27 @@ const Create = () => {
                         type="text"
                         placeholder="Karnan"
                     />
-                    <MyTextInput
+                    <MyTextArea
                         label="movieDescription"
                         name="movieDescription"
                         type="textarea"
+                        rows="6"
                         placeholder="about Karnan Movie Review..."
                     />
+
                     <MyTextInput
                         label="movieRelesaeDate"
                         name="movieRelesaeDate"
                         type="date"
-                        placeholder="****"
                     />
+
                     <MyTextInput
                         label="movieRating"
                         name="movieRating"
                         type="number"
                         placeholder="movie rating..."
                     />
+
                     <MyTextInput
                         label="ticketPrice"
                         name="ticketPrice"
@@ -97,12 +100,27 @@ const Create = () => {
                         type="text"
                         placeholder="Countries...."
                     />
-                    <MyTextInput
+
+
+                    <MySelect
                         label="genre"
-                        name="genre"
-                        type="text"
-                        placeholder="genre...."
-                    />
+                        name="genre">
+                        <option value="">Select the Genre</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="drama">Drama</option>
+                        <option value="romance">Romance</option>
+                        <option value="thriller">Thriller</option>
+                        <option value="classic">Classic</option>
+                        <option value="horror">Horror</option>
+                        <option value="action">Action</option>
+                        <option value="science">Science Fiction</option>
+                        <option value="documentry">Documentry</option>
+                        <option value="fiction">Fiction</option>
+                        <option value="kids">Kids</option>
+
+                    </MySelect>
+
+
                     <MyTextInput
                         label="moviePicture"
                         name="moviePicture"

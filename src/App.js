@@ -2,8 +2,8 @@ import './App.css';
 // import Navbar from './components/Navbar';
 // import Movie from './pages/Movie'
 import Create from './pages/Create'
-import Login from './pages/Login'
-import Signup from './pages/Signup'
+// import Login from './pages/Login'
+// import Signup from './pages/Signup'
 
 function App() {
   return (
@@ -14,8 +14,8 @@ function App() {
       </header>
       {/* <Navbar /> */}
       {/* <Movie /> */}
-      <Login />
-      <Signup />
+      {/* <Login />
+      <Signup /> */}
       <Create />
     </div>
   );
