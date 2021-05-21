@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import axios from 'axios'
 // import ReactDOM from 'react-dom';
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
@@ -6,7 +7,18 @@ import MyTextInput from '../components/MyTextInput'
 import MyTextArea from '../components/MyTextArea';
 import MySelect from '../components/MySelectLabel';
 
+const moviePostCall = async () => {
+    try {
+        const { data } = await axios.post('url', {
+            // moviename,
+            // movieDescription,
 
+        })
+    } catch (error) {
+        console.log(error);
+
+    }
+}
 // And now we can use these
 const Create = () => {
     return (
@@ -129,7 +141,7 @@ const Create = () => {
                     />
 
 
-                    <button type="submit" className="btnstyle">Submit</button>
+                    <button type="submit" onClick="moviePostCall()" className="btnstyle">Submit</button>
                 </Form>
             </Formik>
         </>
