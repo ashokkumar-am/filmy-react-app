@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import moment from 'moment';
 
 class Movie extends React.Component {
     constructor(props) {
@@ -38,7 +39,7 @@ class Movie extends React.Component {
                                     <p className="card-text">Ticket Price : {item.ticketPrice}</p>
                                     <p className="card-text">Genre : {item.genre}</p>
                                     <p className="card-text">Rating : {item.rating}</p>
-                                    <p className="card-text">Release Date : {item.releaseDate}</p>
+                                    <p className="card-text">Release Date : {moment(item.releaseDate).format('DD/MM/YYYY')}</p>
                                     <button href="" className="btn btn-primary">CLICK HERE</button>
                                 </div>
                             </div>

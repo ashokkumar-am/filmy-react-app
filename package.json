@@ -22,8 +22,10 @@
     "axios": "^0.21.1",
     "cors": "^2.8.5",
     "formik": "^2.2.6",
+    "moment": "^2.29.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-moment": "^1.1.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "styled-components": "^5.3.0",
@@ -34,7 +36,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest --colors",
-    "coverage" : "jest --colors --coverage",
+    "coverage": "jest --colors --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
