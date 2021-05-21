@@ -24,8 +24,6 @@ class Movie extends React.Component {
 
     render() {
         const { items } = this.state;
-
-
         return (
             <div className="container-fluid">
                 <div className="row">

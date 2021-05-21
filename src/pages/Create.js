@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // import ReactDOM from 'react-dom';
-import { Formik, Form, useField } from 'formik';
+import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 import MyTextInput from '../components/MyTextInput'
 import MyTextArea from '../components/MyTextArea';
@@ -11,7 +11,7 @@ import MySelect from '../components/MySelectLabel';
 const Create = () => {
     return (
         <>
-            <h1>Register Form!</h1>
+            <h1>Movie Upload Form!</h1>
             <Formik
                 initialValues={{
                     movieName: '',
