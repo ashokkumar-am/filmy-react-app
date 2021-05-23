@@ -1,23 +1,12 @@
-import './App.css';
-// import Navbar from './components/Navbar';
-import Movie from './pages/Movie'
-import Create from './pages/Create'
-// import Login from './pages/Login'
-// import Signup from './pages/Signup'
+import React, { Fragment } from 'react';
+
+import Routes from './router';
 
 function App() {
   return (
-    <div className='App'>
-      <header>
-        <p>ab</p>
-        {/* <h1>Register Page</h1> */}
-      </header>
-      {/* <Navbar /> */}
-      <Movie />
-      {/* <Login />
-      <Signup /> */}
-      <Create />
-    </div>
+    <Fragment>
+      <Routes />
+    </Fragment>
   );
 }
 
